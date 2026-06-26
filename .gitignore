@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtualenv
+venv/
+env/
+.venv/
+
+# Playwright
+.pytest_cache/
+playwright-report/
+test-results/
+
+# Temporary files
+*.tmp
+*.tmp.html
+*.tmp.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Secrets — DO NOT commit API keys
+.env
+.env.local
+secrets.json
