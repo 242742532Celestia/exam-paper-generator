@@ -1,0 +1,18 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install pdfplumber python-docx playwright
+      - name: Smoke test
+        run: python3 -c "from scripts.build_pdf import normalize_math; print(normalize_math('E_ISE'))"
+
