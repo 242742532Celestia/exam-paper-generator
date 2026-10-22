@@ -27,7 +27,7 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/exam-paper-generator.git
+git clone https://github.com/242742532Celestia/exam-paper-generator.git
 cd exam-paper-generator
 ```
 
@@ -94,10 +94,11 @@ exam-paper-generator/
 │   ├── extract_text.py       # PDF/DOCX 文本提取 + OCR
 │   ├── build_pdf.py          # Markdown → PDF（含 KaTeX 公式渲染）
 │   └── generate_paper.py     # AI 出题核心逻辑（需配合 LLM API）
-├── references/               # 参考文档
 ├── README.md
+├── SKILL.md
 ├── LICENSE
-└── .gitignore
+├── .gitignore
+└── .github/workflows/test.yml # CI 冒烟测试
 ```
 
 ## 设计思路
